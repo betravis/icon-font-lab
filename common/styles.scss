@@ -1,0 +1,36 @@
+---
+---
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
+@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro);
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 120%;
+    line-height: 1.5;
+    max-width: 30em;
+    margin: 0 auto;
+}
+
+.figure {
+    width: 100%;
+    text-align: center;
+    & > img {
+        max-width: 400px;
+    }
+    &.icons > img {
+        width: 30%;
+    }
+}
+
+code {
+    font-family: 'Source Code Pro', monospace;
+    background-color: #eee;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    border-radius: 0.2em;
+}
+
+em {
+    font-weight: bold;
+    font-style: normal;
+}
