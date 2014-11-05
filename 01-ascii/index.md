@@ -8,7 +8,7 @@ title: Exercise 1, ASCII Icon Font
 
 I had to create an icon font the other day to demonstrate the [different ways][icon-methods] of using icons (including icon fonts). I figured I would document how to make one using FontForge, in case you ever have to make or adjust one by hand.
 
-A couple notes before we get started. Icon fonts are just one way of using icons. The other current major players are vector and raster image icons. CSS-Tricks has a [comparison of fonts and SVG icons][css-tricks-fonts-vs-svg]. In general, the trend I see today is using SVG icons where possible with PNG fallback. You may still find icon fonts fit your situation best, but it's worth considering other options too. Finally, if you are routinely packaging a large number of icons into a font, it will probably be easier to use a tool, either a GUI based tool like [Icomoon][icomoon] or [Fontello][fontello] or a build script like [Font Custom][font-custom].
+A couple notes before we get started. Icon fonts are just one way of using icons. The other current major players are vector and raster image icons. CSS-Tricks has a [comparison of fonts and SVG icons][css-tricks-fonts-vs-svg]. In general, the trend I see today is using SVG icons where possible with PNG fallback. Icon fonts' main advantage is compatibility. They are usable even in truly archaic versions of IE. However, SVG has now gained pretty solid browser support as well. You may still find icon fonts fit your situation best, but it's worth considering other options too. Finally, if you are routinely packaging a large number of icons into a font, it will probably be easier to use a tool, either a GUI based tool like [Icomoon][icomoon] or [Fontello][fontello] or a build script like [Font Custom][font-custom].
 
 ## Ready?
 
