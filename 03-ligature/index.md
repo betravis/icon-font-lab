@@ -13,7 +13,7 @@ The key takeaway is that you can also use ligatures to replace the name of an ic
 ![Carrot Bunny][carrot]
 {: .figure .icons }
 
-This builds on two preview exercises, building an [ascii icon font][exercise-01] and building a [pua icon font][exercise-02]. You can pick up immediately from where *Exercise 2* left off, or fire up [FontForge][fontforge] with the `03-ligature/bunny-sans-pua.svg` file in the [assets][repo] for this lab.
+This builds on two previous exercises, building an [ascii icon font][exercise-01] and building a [pua icon font][exercise-02]. You can pick up immediately from where *Exercise 2* left off, or fire up [FontForge][fontforge] with the `03-ligature/bunny-sans-pua.svg` file in the [assets][repo] for this lab.
 
 Start off by reencoding the font to use Unicode. [Exercise 2][exercise-02] contains a longer writeup on the reasoning behind this. `Encoding > Reencode > ISO 10646-1 (Unicode, BMP)`.
 
@@ -29,7 +29,7 @@ The first thing we have to do is create the ligature lookup table. With your fon
 ![Lookups][lookups]
 {: .figure }
 
-We are going to add a ligature lookup table, followed by a subtable to contain our specific ligatures. Select `Add Table` to get a dialog you will fill out like the one below.
+We are going to add a ligature lookup table, followed by a subtable to contain our specific ligatures. Select `Add Table` to get a dialog, which you will fill out like the one below.
 
 ![Add Lookup Table][add-lookup-table]
 {: .figure }
@@ -42,7 +42,7 @@ We are going to add a ligature lookup table, followed by a subtable to contain o
 The interface shifts a little oddly when you click `New`, but don't worry. `liga` is the font feature that this type of substitution takes advantage of. While `Discretionary Ligatures (dlig)` may make more sense, I have had less success with making them work. If you need to go back to edit this at a later time, choose `Edit Metadata` with the lookup table selected.
 
 ![Ligature Lookup Table][lookup-table]
-{: .preview }
+{: .figure }
 
 ## Step 2: Add the Ligatures
 
@@ -55,6 +55,7 @@ The actual ligatures are held in a lookup's subtables. To create a subtable.
 FontForge will create the subtable and open it for editing.
 
 ![Subtable Entries][subtable-entries]
+{: .figure }
 
 These are the entries you will create. The right column contains the combination of letters that form the ligature, separated by spaces. Letters are themselves, but some other characters would be spelled out, like `period(.)` for, you guessed it, the period. The left column contains the glyph to be substituted. To create the first entry:
 
@@ -71,7 +72,7 @@ Click `OK` to close out the subtable, and `OK` to close out of Font Information.
 You can open up ametrics window to preview your font. Choose `Metrics > New Metrics Window` from the top menu.
 
 ![Ligature Metrics][metrics]
-{: .preview }
+{: .figure }
 
 Enter your ligature's component letters in the top text input. You should see the ligature glyph below.
 
@@ -79,7 +80,7 @@ Enter your ligature's component letters in the top text input. You should see th
 
 When you're ready to generate your font:
 
-1. Select `File > Generate Fonts&hellip;`
+1. Select `File > Generate Fonts...`
 2. Choose `TrueType` as the font type (this is different than the previous exercises)
 3. Make sure `Validate Before Saving` is unchecked
 4. Select a location and name
